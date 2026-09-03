@@ -107,7 +107,7 @@ a:hover{color:#D9531A}
 
     <div data-reveal="120" style="opacity:0;transform:translateY(26px);transition:.9s cubic-bezier(.2,.8,.2,1);position:relative;min-height:420px">
       <div style="position:relative;border-radius:26px;overflow:hidden;box-shadow:0 24px 60px rgba(217,83,26,.22);aspect-ratio:4/5;max-height:560px">
-        <div id="hero-art" style="position:absolute;inset:-4%;transition:transform .25s ease-out;background-color:#EADFCB;background-image:url('img/hero.jpg');background-size:cover;background-position:center;background-repeat:no-repeat"></div>
+        <div id="hero-art" style="position:absolute;inset:-4%;transition:transform .25s ease-out;background-color:#EADFCB;background-image:url('hero.jpg');background-size:cover;background-position:center;background-repeat:no-repeat"></div>
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(242,106,27,0) 35%,rgba(242,106,27,.75) 100%)"></div>
         <div style="position:absolute;left:20px;right:20px;bottom:20px;color:#fff">
           <div style="font-family:'Caveat Brush',cursive;font-size:26px">você consegue imaginar?</div>
@@ -205,7 +205,7 @@ a:hover{color:#D9531A}
       </div>
     </div>
     <div data-reveal="120" style="opacity:0;transform:translateY(26px);transition:.9s cubic-bezier(.2,.8,.2,1);position:relative">
-      <div style="border-radius:26px;overflow:hidden;aspect-ratio:1/1;position:relative;box-shadow:0 20px 50px rgba(217,83,26,.18);background-color:#EADFCB;background-image:url('img/bistro.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;transition:transform .5s" style-hover="transform:scale(1.02) rotate(-1deg)">
+      <div style="border-radius:26px;overflow:hidden;aspect-ratio:1/1;position:relative;box-shadow:0 20px 50px rgba(217,83,26,.18);background-color:#EADFCB;background-image:url('bistro.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;transition:transform .5s" style-hover="transform:scale(1.02) rotate(-1deg)">
       </div>
       <div style="position:absolute;right:-10px;top:-16px;width:96px;height:96px;border-radius:50%;background:#4E9A4C;color:#fff;display:grid;place-items:center;text-align:center;font-family:Anton,sans-serif;font-size:15px;line-height:1.05;text-transform:uppercase;box-shadow:0 14px 30px rgba(78,154,76,.35);animation:r360float 7s ease-in-out infinite">Feito<br>na hora</div>
     </div>
@@ -398,7 +398,7 @@ a:hover{color:#D9531A}
   </div>
 </footer>
 
-<a href="{{ waLink }}" target="_blank" rel="noreferrer" aria-label="Fale com a gente no WhatsApp" style="position:fixed;right:18px;bottom:18px;z-index:65;width:60px;height:60px;border-radius:50%;background-color:#4E9A4C;background-image:url('img/whatsapp.png');background-size:34px 34px;background-position:center;background-repeat:no-repeat;box-shadow:0 14px 32px rgba(78,154,76,.4);animation:r360pulse 2.6s infinite;transition:transform .25s" style-hover="transform:scale(1.08)"></a>
+<a href="{{ waLink }}" target="_blank" rel="noreferrer" aria-label="Fale com a gente no WhatsApp" style="position:fixed;right:18px;bottom:18px;z-index:65;width:60px;height:60px;border-radius:50%;background-color:#4E9A4C;background-image:url('whatsapp.png');background-size:34px 34px;background-position:center;background-repeat:no-repeat;box-shadow:0 14px 32px rgba(78,154,76,.4);animation:r360pulse 2.6s infinite;transition:transform .25s" style-hover="transform:scale(1.08)"></a>
 
 </div>
 
@@ -414,7 +414,7 @@ class Component extends DCLogic {
     { id: 'bemestar', label: 'Bem-estar' },
     { id: 'local', label: 'Localização' }
   ];
-  img(file) { return "url('img/" + file + "')"; }
+  img(file) { return "url('" + file + "')"; }
   galleryData = [
     { label: 'O espaço à beira-mar, com palmeiras e área externa', tag: 'O ESPAÇO', span: 'span 2', id: 'g-espaco.jpg' },
     { label: 'Aula de yoga ao ar livre, no pôr do sol', tag: 'YOGA DANCE', span: 'span 1', id: 'g-yoga.jpg' },
